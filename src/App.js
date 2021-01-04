@@ -39,8 +39,8 @@ class App extends React.Component {
     ctx.textBaseline = "top";
 
     predictions.forEach(prediction => {
-      const x = prediction.bbox[0];
-      const y = prediction.bbox[1];
+      const x = prediction.bbox[0]*1.35;
+      const y = 1.2*(prediction.bbox[1]+50);
       const width = prediction.bbox[2];
       const height = prediction.bbox[3];
       // Draw the bounding box.
@@ -113,7 +113,7 @@ class App extends React.Component {
           playsInline
           ref={this.videoRef}
           width="720"
-          height="600"
+          height="650"
         />
         <canvas style={this.styles} ref={this.canvasRef} width="720" height="650" />
       </div>
