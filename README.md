@@ -12,6 +12,11 @@ Live demo [here](https://akashmanna.github.io/Online-Proctoring/)
 ### Requirements
 simple web server
 
+### How to run
+``` 
+npm install
+npm start
+```
 
 ### TODO
 - Add Number of faces
